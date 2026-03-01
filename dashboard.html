@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-bg">
+
+<nav class="navbar">
+    <div class="logo">🎓 Student Dashboard</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><a href="login.html">Logout</a></li>
+    </ul>
+</nav>
+
+<section class="dashboard-container">
+
+    <!-- Attendance Card -->
+    <div class="dashboard-card">
+        <h2>📊 Attendance Calculator</h2>
+
+        <input type="number" id="totalClasses" placeholder="Total Classes">
+        <input type="number" id="attendedClasses" placeholder="Attended Classes">
+        <button onclick="calculateAttendance()" class="btn-primary">
+            Calculate Attendance
+        </button>
+
+        <p id="attendanceResult" class="result-text"></p>
+    </div>
+
+    <!-- Result Card -->
+    <div class="dashboard-card">
+        <h2>📑 Semester Result</h2>
+
+        <table class="result-table">
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Management</td>
+                <td>78</td>
+            </tr>
+        </table>
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

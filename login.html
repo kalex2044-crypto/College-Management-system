@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body class="login-bg">
+
+<div class="login-container">
+
+    <div class="login-card">
+        <h2>🎓 Student Login</h2>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" placeholder="Enter Email" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁</span>
+            </div>
+
+            <button type="submit" class="btn-login">Login</button>
+
+            <p id="error" class="error-text"></p>
+
+        </form>
+
+        <p class="extra-links">
+            Forgot Password? | Contact Admin
+        </p>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

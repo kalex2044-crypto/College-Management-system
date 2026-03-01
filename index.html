@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">🎓 College Portal</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="fees.html">Fees & Notices</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="overlay">
+        <h1>Welcome to College Management System</h1>
+        <p>Manage Attendance, Results, and Fees in One Place</p>
+        <a href="login.html" class="btn-primary">Get Started</a>
+    </div>
+</header>
+
+<!-- Features Section -->
+<section class="features">
+    <h2>Our Features</h2>
+    <div class="feature-container">
+        <div class="card">
+            <h3>📊 Attendance</h3>
+            <p>Track your attendance percentage instantly.</p>
+        </div>
+
+        <div class="card">
+            <h3>📑 Results</h3>
+            <p>Check your academic performance anytime.</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Fees & Notices</h3>
+            <p>Stay updated with latest announcements.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+    <h2>About Our Portal</h2>
+    <p>
+        This College Management System helps students manage academic
+        activities efficiently through a simple and user-friendly interface.
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 College Management System | Designed by You</p>
+</footer>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "ada8210e-0173-4b3d-b43c-9d39f842a4f5", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "27e7b12d-b959-4ed0-9bed-8e29098aa75a", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
